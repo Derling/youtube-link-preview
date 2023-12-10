@@ -1,10 +1,11 @@
 {
-    "name": "Hello Extensions Of The World",
-    "description": "Base Level Extension",
-    "version": "1.0",
-    "manifest_version": 3,
-    "action": {
-      "default_popup": "hello.html",
-      "default_icon": "hello_extensions.png"
+  "name": "Twitch Chat YT Previews",
+  "version": "0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://*.twitch.tv/*"],
+      "js": ["content-script.js"]
     }
-  }
+  ]
+}
